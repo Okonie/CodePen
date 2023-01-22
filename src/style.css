@@ -1,0 +1,137 @@
+* { margin: 0; padding: 0; }
+           p {
+             padding: 10px; }
+           #left { 
+             position: absolute; left: 0; top: 50px; width: 700px; 
+background-color: white;
+ border: 2px solid gray;
+   border-radius: 5px;
+  border-style: groove;
+text-align: left;}
+           #right {
+             position: absolute; left: 700px; top: 50px;
+ 
+} 
+#r1 {
+background-color: white;
+ border: 2px solid gray;
+   border-radius: 5px;
+  border-style: groove;
+text-align: center;
+  width: 1000px;
+  height: 40px;
+  font-size: 30px;
+}
+#b1 {
+background-color: white;
+ border: 2px solid gray;
+   border-radius: 5px;
+  border-style: groove;
+text-align: center;
+  width: 1000px;
+  height: 40px;
+  font-size: 30px;
+}
+.mtd {
+  width: 20px;
+  height: 60px;
+}
+#up {
+  position: absolute; left: 0; top: 0; width: 1700px; height: 50px;
+background-color: white;
+ border: 2px solid gray;
+   border-radius: 5px;
+  border-style: groove;
+text-align: center;
+  font-size: 40px;
+  padding: 0px;
+}
+#left1 {
+  text-align:center;
+  font-size: 30px;
+  padding: 3px;
+}
+
+ #bot { position: absolute; left: 470px; top: 800px; 
+background-color: white;
+ border: 2px solid gray;
+   border-radius: 5px;
+  border-style: groove;
+text-align: left;}
+canvas {
+  border: 2px solid gray;
+   border-radius: 5px;
+  border-style: groove;
+ 
+}
+.slider {
+    -webkit-appearance: none;
+    width: 200px;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+#in4 {  
+  width: 200px;
+  height: 25px;
+}
+#in4::-webkit-slider-thumb {
+  height: 25px;
+}
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF52;
+    cursor: pointer;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+input{
+    text-align: center;
+}
+
+table, tr, td {
+  border: solid black 2px;
+    text-align: center;
+
+}
+#td1 {
+} 

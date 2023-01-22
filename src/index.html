@@ -1,0 +1,103 @@
+ <div id="up">
+   Визуализация движения точек по аналитически заданным траекториям
+</div>
+<div id="left">
+  <div id="left1">
+    Панель управления
+  </div>
+   <table width=700px>
+      <tr>
+   <td>Прямая</td> 
+       <td id="td1" > 
+         <div class="mtd" > </div></td>
+  <td>
+       </td>
+       <td> a:<input  size="4px" type="text" id="t6"> </td>
+        <td >y=ax+b</td>
+     </tr>
+     <tr>
+   <td >Парабола</td> 
+       <td id="td2">  <div class="mtd"> </div> </td>
+  <td><input class="slider"  type="range" min="-0.003" max="0" step="0.0001" id="in1" oninput="f1()">
+       </td>
+       <td> a:<input size="4px" type="text" id="t1"></br> b:<input size="4px" type="text" id="t11"> </td>
+  <td >y=ax<sup>2</sup>+bx+c</td>
+     </tr>
+     <tr>
+       <td >Окружность</td>
+        <td id="td3"> <div class="mtd" > </div> </td>
+       <td><input class="slider"  type="range" min="-1000" max="0" step="1" id="in2" oninput="f1()"></td>
+       <td> a:<input size="4px" type="text" id="t21"> </br>b:<input size="4px" type="text" id="t2"> </br>R:<input size="4px" type="text" id="t22">
+       </td>
+       <td >(x-a)<sup>2</sup>+(y-b)<sup>2</sup>=R<sup>2</sup></td> 
+     </tr>
+     <td>Гипербола</td>
+     <td id="td4"> <div class="mtd" > </div> </td>
+<td><input class="slider"  type="range" min="-300" max="-0.01" step="1" id="in3" oninput="f1()">
+     </td> 
+<td> a: <input size="4px" type="text" id="t32"> </br>
+b:<input size="4px" type="text" id="t31">
+</br>   c:  <input size="4px" type="text" id="t3">
+</td>
+     <td >y=a+b/(x-c)</td>
+     </tr>
+   <tr>
+   <td>Брахистохрона</td> 
+       <td id="td5">  <div class="mtd" > </div></td>
+  <td>
+       </td>
+       <td> a:<input  size="4px" type="text" id="t5"> </td>
+     <td >x=a(t-sint)+b </br>y=a(1-cost)</td>
+     </tr>
+  </table>
+<table width=700px>
+   <tr>
+     <td>Трение</td>
+     <td><input class="slider" type="range" value="0" min="0" max="0.5" step="0.01" id="in4" oninput="f1()"></td>
+     <td> <input size=18px type="text" id="t4"> </td>
+   </tr>
+<tr>
+  <td>  Конечная точка </td>
+<td><input type=text id=x1 size=8 placeholder=x>
+  <input type=text id=y1 size=8 placeholder=y> </td>
+      </tr>
+<tr>
+  <td>  Победитель </td>
+  <td><input type=text id=vic size=20 placeholder=Победитель> </td>
+</tr>
+</table>
+<form>
+  
+  <input class="button1 button" type="button" value="Restart" onclick="restart(true)">
+     <input class="button1 button" type="button" value="Delete Row" onclick="deleteRow()">
+     <input class="button1 button" type="button" value="Draw" onclick="drawFromTable()">
+ 
+  </form>
+<table id=tab width=700px>
+  <tr>
+    <td> Кривая/Трение </td>
+     <td> Прямая </td>
+     <td> Парабола </td>
+     <td> Окружность</td>
+     <td> Гипербола</td>
+     <td> Брахистохрона  </td>
+  </tr>
+
+</table >
+
+ </div>
+    <div id="right">
+      <div id="r1">
+        Движение
+      </div>
+       <canvas id="can" width=1000 height=400>
+      </canvas>
+      <div id="b1" hidden="true">
+        Зависимость времени прохождения траектории от коэффициента трения
+      </div>
+        <canvas id="can1" width=1000 height=400 hidden="true">
+  </canvas>
+    </div>
+<div id="bot">
+
+</div>
